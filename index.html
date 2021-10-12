@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <ul>
+                <li class="title">Online Calculator</li>
+            </ul>
+        </nav>
+
+        <div class="calculatorSection">
+            <form class="calculatorScreen" style="display: inline;"> 
+                <!-- Calculator Screen -->
+                <input type="text" class="displayScreen" readonly>
+            </form>
+                <div class="calculatorBtns">
+                    <!-- Number buttons -->
+                    <button class="btn numberBtn" type="button" data-num="0">0</button>
+                    <button class="btn numberBtn" type="button" data-num="1">1</button>
+                    <button class="btn numberBtn" type="button" data-num="2">2</button>
+                    <button class="btn numberBtn" type="button" data-num="3">3</button>
+                    <button class="btn numberBtn" type="button" data-num="4">4</button>
+                    <button class="btn numberBtn" type="button" data-num="5">5</button>
+                    <button class="btn numberBtn" type="button" data-num="6">6</button>
+                    <button class="btn numberBtn" type="button" data-num="7">7</button>
+                    <button class="btn numberBtn" type="button" data-num="8">8</button>
+                    <button class="btn numberBtn" type="button" data-num="9">9</button>
+                    <button class="btn numberBtn" type="button" data-num=".">.</button>
+
+                    <!-- Operators -->
+                    <button class="btn operatorBtn" id="operatorBtnMultiply" type="button" data-num="*">*</button>
+                    <button class="btn operatorBtn" id="operatorBtnDivide" type="button" data-num="/">/</button>
+                    <button class="btn operatorBtn" id="operatorBtnSubtract" type="button" data-num="-">-</button>
+                    <button class="btn operatorBtn" id="operatorBtnAddition" type="button" data-num="+">+</button>
+                    <button class="operatorBtnEqual" id="operatorBtnEqual" type="button">=</button>
+                    <button class="btn operatorBtn" id="operatorBtnDelete" type="button">DEL</button>
+                </div>
+        </div>
+
+        <div class="footer">
+            <h2 class="rulesDesc">A calculator app to help you work out some math problems when you're too tired to think about them.</h2>
+        </div>
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
+
